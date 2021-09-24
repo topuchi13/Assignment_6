@@ -41,6 +41,11 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    // extra 20 points
+    @IBAction func fontSizeSlider(_ sender: UISlider) {
+        labelText.font = labelText.font.withSize(CGFloat(sender.value))
+    }
 
 }
 
